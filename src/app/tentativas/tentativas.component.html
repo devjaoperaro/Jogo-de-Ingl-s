@@ -1,3 +1,6 @@
-<img class="coracao" [src]="coracaoVazio">
+<!-- <img class="coracao" [src]="coracaoCheio">
 <img class="coracao" [src]="coracaoCheio">
-<img class="coracao" [src]="coracaoCheio">
+<img class="coracao" [src]="coracaoCheio"> -->
+
+
+<img *ngFor="let CoracaoModule of coracoes" [src]="CoracaoModule.exibeCoracao()">
